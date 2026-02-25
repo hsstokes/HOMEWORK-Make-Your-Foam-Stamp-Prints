@@ -162,13 +162,7 @@ p {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-  .preview-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .preview-gallery {
     grid-template-columns: 1fr;
   }
@@ -204,112 +198,6 @@ p {
   color: var(--warm-accent);
   font-size: 0.9rem;
   line-height: 1.4;
-}
-
-/* Process visual */
-.process-visual {
-  background: white;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 30px 0;
-  box-shadow: 0 5px 15px rgba(139, 115, 85, 0.15);
-  border: 2px solid var(--warm-border);
-}
-
-.process-visual h3 {
-  color: var(--warm-accent);
-  margin-top: 0;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.process-steps {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.process-step {
-  text-align: center;
-  flex: 1;
-  min-width: 100px;
-  max-width: 150px;
-}
-
-.process-icon {
-  width: 70px;
-  height: 70px;
-  background: var(--warm-light);
-  border: 3px solid var(--warm-border);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 10px auto;
-  font-size: 1.8rem;
-}
-
-.process-step p {
-  font-size: 0.9rem;
-  margin: 0;
-  font-weight: bold;
-  color: var(--warm-accent);
-}
-
-.process-arrow {
-  font-size: 2rem;
-  color: var(--homework);
-  flex-shrink: 0;
-}
-
-@media (max-width: 600px) {
-  .process-steps {
-    flex-direction: column;
-  }
-  
-  .process-arrow {
-    transform: rotate(90deg);
-  }
-}
-
-/* Video box */
-.video-box {
-  background: #fff3cd;
-  border: 2px solid #ffc107;
-  border-radius: 10px;
-  padding: 25px;
-  margin: 30px 0;
-}
-
-.video-box h4 {
-  color: #856404;
-  margin: 0 0 12px 0;
-  font-size: 1.2rem;
-}
-
-.video-box > p {
-  margin-bottom: 15px;
-}
-
-/* Video container */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  margin: 20px 0;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /* Steps container */
@@ -367,19 +255,88 @@ p {
   margin-bottom: 10px;
 }
 
+/* Process visual */
+.process-visual {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 5px 15px rgba(139, 115, 85, 0.15);
+  border: 2px solid var(--warm-border);
+}
+
+.process-visual h3 {
+  color: var(--warm-accent);
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.process-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.process-step {
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+  max-width: 150px;
+}
+
+.process-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--warm-light);
+  border: 3px solid var(--warm-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+  font-size: 1.8rem;
+}
+
+.process-step p {
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: bold;
+  color: var(--warm-accent);
+}
+
+.process-arrow {
+  font-size: 1.8rem;
+  color: var(--homework);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .process-steps {
+    flex-direction: column;
+  }
+  
+  .process-arrow {
+    transform: rotate(90deg);
+  }
+}
+
 /* Materials box */
 .materials-box {
   background: linear-gradient(135deg, #e3f2fd 0%, #fff 100%);
   border: 2px solid #2196f3;
   border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 25px;
+  margin: 30px 0;
 }
 
-.materials-box h4 {
+.materials-box h3 {
   color: #1565c0;
-  margin: 0 0 15px 0;
-  font-size: 1.2rem;
+  margin-top: 0;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
 }
 
 .materials-grid {
@@ -397,7 +354,7 @@ p {
 .material-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: white;
   padding: 12px 15px;
   border-radius: 8px;
@@ -406,74 +363,16 @@ p {
 
 .material-icon {
   font-size: 1.5rem;
+  flex-shrink: 0;
 }
 
 .material-text {
   font-size: 0.95rem;
 }
 
-/* Technique visual */
-.technique-box {
-  background: #f5f5f5;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px 0;
-}
-
-.technique-box h4 {
-  color: var(--secondary);
-  margin: 0 0 15px 0;
-  font-size: 1.1rem;
-  text-align: center;
-}
-
-.technique-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.technique-item {
-  text-align: center;
-  flex: 1;
-  min-width: 120px;
-  max-width: 180px;
-}
-
-.technique-demo {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 10px auto;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  border: 3px solid;
-}
-
-.technique-demo.pressed {
-  background: linear-gradient(135deg, #333 0%, #666 100%);
-  border-color: #222;
-}
-
-.technique-demo.raised {
-  background: linear-gradient(135deg, #f0f0f0 0%, #fff 100%);
-  border-color: #ddd;
-}
-
-.technique-item p {
-  font-size: 0.85rem;
-  margin: 0;
-  color: #666;
-}
-
-.technique-item strong {
+.material-text strong {
   display: block;
-  color: var(--secondary);
-  margin-bottom: 5px;
+  color: #1565c0;
 }
 
 /* Warning box */
@@ -547,72 +446,42 @@ p {
   margin-bottom: 6px;
 }
 
-/* Thinking box */
-.thinking-box {
-  background: var(--homework-light);
+/* Video container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Video box */
+.video-box {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
   border-radius: 10px;
   padding: 25px;
   margin: 30px 0;
-  border-left: 5px solid var(--homework);
 }
 
-.thinking-box h3 {
-  color: var(--homework);
-  margin-top: 0;
-  font-size: 1.4rem;
-  margin-bottom: 20px;
+.video-box h4 {
+  color: #856404;
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
 }
 
-.thinking-box ul {
-  margin-left: 20px;
-  margin-bottom: 0;
-}
-
-.thinking-box li {
-  margin-bottom: 10px;
-}
-
-/* Examples grid */
-.examples-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin: 25px 0;
-}
-
-@media (max-width: 600px) {
-  .examples-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.example-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  border: 2px solid var(--homework);
-}
-
-.example-image img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.example-image img:hover {
-  transform: scale(1.02);
-}
-
-.example-caption {
-  padding: 15px;
-  text-align: center;
-  font-size: 0.95rem;
-  color: var(--homework);
-  font-weight: 600;
-  background: var(--homework-light);
+.video-box > p {
+  margin-bottom: 15px;
 }
 
 /* Checklist */
@@ -698,6 +567,64 @@ p {
   font-weight: bold;
   margin: 15px 0;
   color: var(--homework);
+}
+
+/* Examples section */
+.examples-box {
+  background: var(--homework-light);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 30px 0;
+  border: 2px solid var(--homework);
+}
+
+.examples-box h3 {
+  color: var(--homework);
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.examples-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .examples-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.example-image {
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(234, 55, 163, 0.15);
+}
+
+.example-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid var(--homework);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.example-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(234, 55, 163, 0.25);
+}
+
+.example-image figcaption {
+  margin-top: 12px;
+  font-style: italic;
+  color: var(--homework);
+  font-size: 0.9rem;
 }
 
 /* Modal */
@@ -801,27 +728,27 @@ footer {
   
   <div class="banner">
     <h2>HOMEWORK: Make Your Foam Stamp Prints</h2>
-    <p>Create your handmade prints ready for the workshop</p>
+    <p>Create your foam stamps and printed designs ready for the workshop</p>
   </div>
 
   <div class="preview-box">
     <h3>🖼️ What We'll Make in Class</h3>
-    <p>Transform your <strong>handmade foam prints</strong> into <strong>digital patterns</strong> you can use in Photoshop</p>
+    <p>Transform your <strong>foam stamps</strong> into <strong>digital patterns</strong> you can use in Photoshop</p>
     
     <div class="preview-gallery">
       <figure class="preview-image">
-        <img src="example-foam-print-1.jpg" alt="Example foam print artwork" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='[Student example: Foam print pattern]';">
+        <img src="example-foam-print-1.jpg" alt="Foam print example showing digital pattern" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='[Example: Digital pattern from foam print]';">
         <figcaption>Your prints become digital patterns</figcaption>
       </figure>
       
       <figure class="preview-image">
-        <img src="example-foam-print-2.jpg" alt="Example foam print on fabric" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='[Student example: Layered prints]';">
-        <figcaption>Layer colours for unique effects</figcaption>
+        <img src="example-foam-print-2.jpg" alt="Foam print with layered colours" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='[Example: Layered colour prints]';">
+        <figcaption>Layered colours create depth</figcaption>
       </figure>
       
       <figure class="preview-image">
-        <img src="example-foam-print-3.jpg" alt="Example foam print design" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='[Student example: Digital pattern]';">
-        <figcaption>Use in your fashion designs</figcaption>
+        <img src="example-foam-print-3.jpg" alt="Foam print used in fashion design" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='[Example: Print on fashion design]';">
+        <figcaption>Use on your fashion designs</figcaption>
       </figure>
     </div>
   </div>
@@ -835,73 +762,78 @@ footer {
       </div>
       <div class="process-arrow">→</div>
       <div class="process-step">
-        <div class="process-icon">🖌️</div>
-        <p>Add Ink</p>
+        <div class="process-icon">🎨</div>
+        <p>Ink & Print</p>
       </div>
       <div class="process-arrow">→</div>
       <div class="process-step">
-        <div class="process-icon">📄</div>
-        <p>Print on Paper</p>
+        <div class="process-icon">📷</div>
+        <p>Scan</p>
       </div>
       <div class="process-arrow">→</div>
       <div class="process-step">
-        <div class="process-icon">📤</div>
-        <p>Scan & Edit</p>
+        <div class="process-icon">✨</div>
+        <p>Digital Pattern</p>
       </div>
     </div>
   </div>
 
   <div class="video-box">
     <h4>📺 Watch This Video First</h4>
-    <p>This video shows you how to make your foam stamp:</p>
+    <p>Watch the video to understand the foam printing process:</p>
     <div class="video-container">
-      <iframe src="https://ual.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=751733ec-84ed-4f95-a6a2-b2c100986a92" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://ual.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=YOUR-VIDEO-ID-HERE" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 
   <div class="materials-box">
-    <h4>🛒 Materials You'll Need</h4>
+    <h3>🛒 Materials You Need</h3>
     <div class="materials-grid">
       <div class="material-item">
-        <span class="material-icon">🧽</span>
-        <span class="material-text"><strong>Fun foam sheets</strong> (craft foam)</span>
+        <div class="material-icon">🧽</div>
+        <div class="material-text">
+          <strong>Fun Foam Sheets</strong>
+          Available from craft shops or Amazon
+        </div>
       </div>
       <div class="material-item">
-        <span class="material-icon">🖊️</span>
-        <span class="material-text"><strong>Ballpoint pen</strong> (NOT felt tip)</span>
+        <div class="material-icon">🖊️</div>
+        <div class="material-text">
+          <strong>Ballpoint Pen</strong>
+          To press designs into the foam
+        </div>
       </div>
       <div class="material-item">
-        <span class="material-icon">🎨</span>
-        <span class="material-text"><strong>Ink pads</strong> (different colours)</span>
+        <div class="material-icon">🎨</div>
+        <div class="material-text">
+          <strong>Ink Pads or Paint</strong>
+          Different colours for layering
+        </div>
       </div>
       <div class="material-item">
-        <span class="material-icon">📄</span>
-        <span class="material-text"><strong>Plain paper</strong> (for printing)</span>
-      </div>
-      <div class="material-item">
-        <span class="material-icon">✂️</span>
-        <span class="material-text"><strong>Scissors</strong> (to cut foam)</span>
-      </div>
-      <div class="material-item">
-        <span class="material-icon">📱</span>
-        <span class="material-text"><strong>Phone/scanner</strong> (to digitise)</span>
+        <div class="material-icon">📄</div>
+        <div class="material-text">
+          <strong>Plain Paper</strong>
+          For printing onto
+        </div>
       </div>
     </div>
   </div>
 
   <div class="steps-container">
-    <h2>How to Make Your Prints</h2>
+    <h2>What You Need To Do</h2>
     
     <div class="step-box">
       <div class="step-header">
         <div class="step-number">1</div>
-        <div>Prepare the Foam</div>
+        <div>Cut Your Foam</div>
       </div>
       <div class="step-content">
+        <p>Prepare your foam sheets for stamp making:</p>
         <ul>
-          <li>Cut the foam to the size you want</li>
-          <li>Clean it to remove any dust</li>
-          <li>Make sure the surface is flat and smooth</li>
+          <li>Cut foam into <strong>manageable sizes</strong> (around 10x10cm works well)</li>
+          <li>You can make <strong>multiple smaller stamps</strong> or one larger one</li>
+          <li>Make sure the surface is <strong>clean and flat</strong></li>
         </ul>
       </div>
     </div>
@@ -912,27 +844,12 @@ footer {
         <div>Draw Your Design</div>
       </div>
       <div class="step-content">
-        <p>Use a <strong>ballpoint pen</strong> to draw your design on the foam.</p>
-        
-        <div class="technique-box">
-          <h4>How Foam Printing Works</h4>
-          <div class="technique-visual">
-            <div class="technique-item">
-              <div class="technique-demo pressed">➖</div>
-              <p><strong>Pressed Lines</strong><br>Where you draw = NO ink</p>
-            </div>
-            <div class="technique-item">
-              <div class="technique-demo raised">⬛</div>
-              <p><strong>Raised Areas</strong><br>Flat foam = INK prints</p>
-            </div>
-          </div>
-        </div>
-        
+        <p>Use a <strong>ballpoint pen</strong> to press your design into the foam:</p>
         <ul>
-          <li>Press <strong>hard</strong> to make deep lines in the foam</li>
-          <li>The lines you draw will <strong>NOT</strong> have ink</li>
-          <li>The flat parts <strong>WILL</strong> have ink</li>
-          <li>Think in reverse — draw what you DON'T want printed</li>
+          <li>Press <strong>firmly</strong> to create deep grooves</li>
+          <li>The pressed lines will <strong>stay white</strong> when you print</li>
+          <li>Think about <strong>patterns, textures, or shapes</strong></li>
+          <li>Simple designs often work best!</li>
         </ul>
       </div>
     </div>
@@ -940,14 +857,15 @@ footer {
     <div class="step-box">
       <div class="step-header">
         <div class="step-number">3</div>
-        <div>Add Ink</div>
+        <div>Ink and Print</div>
       </div>
       <div class="step-content">
+        <p>Apply ink and make your prints:</p>
         <ul>
-          <li>Press the ink pad onto the foam</li>
-          <li>Make sure all the flat parts have ink</li>
-          <li>The lines you drew should have no ink in them</li>
-          <li>Don't use too much ink — it can fill in your lines</li>
+          <li>Press the foam onto an <strong>ink pad</strong> or apply paint with a brush</li>
+          <li>Press firmly onto <strong>paper</strong></li>
+          <li>Make <strong>at least 3 different prints</strong></li>
+          <li>Try <strong>different colours</strong> and <strong>layering</strong></li>
         </ul>
       </div>
     </div>
@@ -955,30 +873,15 @@ footer {
     <div class="step-box">
       <div class="step-header">
         <div class="step-number">4</div>
-        <div>Print on Paper</div>
+        <div>Scan or Photograph</div>
       </div>
       <div class="step-content">
+        <p>Make digital copies of your best prints:</p>
         <ul>
-          <li>Put the foam <strong>face down</strong> on paper</li>
-          <li>Press down evenly on the back</li>
-          <li>Don't move the foam while pressing</li>
-          <li>Lift up carefully to see your print</li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="step-box">
-      <div class="step-header">
-        <div class="step-number">5</div>
-        <div>Experiment!</div>
-      </div>
-      <div class="step-content">
-        <p>Make <strong>at least 3 different prints</strong>. Try:</p>
-        <ul>
-          <li><strong>Different patterns</strong> — geometric, organic, abstract</li>
-          <li><strong>Different colours</strong> — try multiple ink pad colours</li>
-          <li><strong>Layering</strong> — print on top of previous prints</li>
-          <li><strong>Partial prints</strong> — don't always use the whole stamp</li>
+          <li>Scan at <strong>300 DPI</strong> or higher</li>
+          <li>Or take <strong>clear, well-lit photos</strong></li>
+          <li>Save as <strong>JPEG</strong> files</li>
+          <li>Make sure prints are <strong>flat and in focus</strong></li>
         </ul>
       </div>
     </div>
@@ -987,13 +890,12 @@ footer {
   <div class="warning-box">
     <div class="warning-icon">⚠️</div>
     <div class="warning-text">
-      <h4>Important: Use a Ballpoint Pen!</h4>
-      <p>You MUST use a <strong>ballpoint pen</strong> to draw on the foam.</p>
+      <h4>Important Tips!</h4>
       <ul>
-        <li><strong>DO NOT use felt tip pens</strong> — they don't make lines in the foam</li>
-        <li><strong>DO NOT use pencils</strong> — too soft, won't work</li>
-        <li>Press <strong>hard enough</strong> to make a visible indent</li>
-        <li>If the lines are too shallow, they will fill with ink</li>
+        <li>Press <strong>hard</strong> with the ballpoint pen — light lines won't show</li>
+        <li>Let ink <strong>dry completely</strong> before scanning</li>
+        <li>Don't use too much ink — it can <strong>blob and smudge</strong></li>
+        <li>Keep your foam stamps — you'll use them again!</li>
       </ul>
     </div>
   </div>
@@ -1003,41 +905,27 @@ footer {
     <div class="tip-text">
       <h4>Tips for Great Prints</h4>
       <ul>
-        <li><strong>Simple designs work best</strong> — don't make lines too close together</li>
-        <li><strong>Press evenly</strong> — uneven pressure = patchy prints</li>
-        <li><strong>Let ink dry</strong> before layering another colour</li>
-        <li><strong>Clean your stamp</strong> with a damp cloth between colours</li>
-        <li><strong>Make extras</strong> — some prints will be better than others</li>
-        <li><strong>Keep your foam stamps</strong> — you can reuse them!</li>
+        <li>Try <strong>overlapping prints</strong> for interesting effects</li>
+        <li>Use <strong>contrasting colours</strong> for layering</li>
+        <li>Print on <strong>different papers</strong> to see what works</li>
+        <li>Make <strong>more prints than you need</strong> — you can choose the best ones</li>
+        <li>Experiment with <strong>rotating</strong> your stamp</li>
       </ul>
     </div>
   </div>
 
-  <div class="thinking-box">
-    <h3>💭 Think About Your Designs</h3>
-    <p>Before you start, consider:</p>
-    <ul>
-      <li>What <strong>patterns</strong> would work well for your project?</li>
-      <li>Do you want <strong>regular repeating</strong> patterns or <strong>random organic</strong> shapes?</li>
-      <li>What <strong>colours</strong> fit your design theme?</li>
-      <li>How might you <strong>combine multiple prints</strong> together?</li>
-      <li>Could you create a <strong>set of stamps</strong> that work together?</li>
-    </ul>
-  </div>
-
-  <h2>Examples of Good Prints</h2>
-  <div class="examples-grid">
-    <div class="example-card">
-      <div class="example-image">
-        <img src="hw-example-1.jpg" alt="Homework example 1" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\"height:200px;display:flex;align-items:center;justify-content:center;background:#f5f5f5;color:#999;\">[Add homework example 1]</div>';">
-      </div>
-      <div class="example-caption">Clear pattern with good ink coverage (Manuela)</div>
-    </div>
-    <div class="example-card">
-      <div class="example-image">
-        <img src="hw-example-2.jpg" alt="Homework example 2" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\"height:200px;display:flex;align-items:center;justify-content:center;background:#f5f5f5;color:#999;\">[Add homework example 2]</div>';">
-      </div>
-      <div class="example-caption">Layered colours create depth (Manuela)</div>
+  <div class="examples-box">
+    <h3>📸 Student Examples</h3>
+    <div class="examples-gallery">
+      <figure class="example-image">
+        <img src="hw-example-1.jpg" alt="Student foam print example" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='[Student example 1]';">
+        <figcaption>Layered colours create depth (Manuela)</figcaption>
+      </figure>
+      
+      <figure class="example-image">
+        <img src="hw-example-2.jpg" alt="Student foam print example" onclick="openModal(this.src)" onerror="this.style.display='none'; this.parentElement.innerHTML='[Student example 2]';">
+        <figcaption>Pattern repetition (Manuela)</figcaption>
+      </figure>
     </div>
   </div>
 
@@ -1108,7 +996,6 @@ footer {
       <li style="margin-bottom: 12px;">🧽 Your foam stamps (keep them!)</li>
       <li style="margin-bottom: 12px;">📄 Your printed designs on paper (at least 3)</li>
       <li style="margin-bottom: 12px;">📱 Scans/photos of your prints (on phone, USB, or cloud)</li>
-      <li style="margin-bottom: 12px;">🎨 Your ink pads (in case you want to make more)</li>
     </ul>
     <div class="submission-date">See you in class! ✨</div>
   </div>
@@ -1146,11 +1033,11 @@ function toggleChecked(element) {
   element.classList.toggle('checked');
   const checkboxes = document.querySelectorAll('.checklist-checkbox');
   const states = Array.from(checkboxes).map(checkbox => checkbox.classList.contains('checked'));
-  localStorage.setItem('foam-print-homework-checklist', JSON.stringify(states));
+  localStorage.setItem('foam-printing-homework-checklist', JSON.stringify(states));
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const savedStates = localStorage.getItem('foam-print-homework-checklist');
+  const savedStates = localStorage.getItem('foam-printing-homework-checklist');
   if (savedStates) {
     const states = JSON.parse(savedStates);
     const checkboxes = document.querySelectorAll('.checklist-checkbox');
